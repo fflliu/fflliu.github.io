@@ -1,82 +1,82 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Slides for Fan Liu’s SIAM NNP 2026 talk on diffusion score estimation.">
-  <title>Diffusion Score Estimation — Slides · Fan Liu</title>
-  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-  <style>
-    :root{color-scheme:light;--paper:#f5f5f2;--ink:#252631;--muted:#626472;--accent:#6554bb;--line:#dcdce2}
-    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.6 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}button,input{font:inherit}a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
-    header{max-width:1280px;margin:0 auto;padding:20px 24px;display:flex;justify-content:space-between;align-items:center;gap:20px;border-bottom:1px solid var(--line)}.title{font-size:16px;font-weight:550;line-height:1.45}.context{display:block;color:var(--muted);font-size:12px;font-weight:400;margin-top:3px}.actions{display:flex;gap:20px;white-space:nowrap;font-size:13px}main{max-width:1280px;margin:0 auto;padding:24px}.stage{width:min(100%,calc(177.7778dvh - 444.4445px));margin:0 auto;aspect-ratio:16/9;position:relative;background:#fff;overflow:hidden;border:1px solid var(--line)}.stage img,.stage video{position:absolute;display:block;object-fit:fill}.stage:fullscreen{width:100vw;height:100vh;aspect-ratio:auto;border:0;background:white}.stage:fullscreen>.canvas{position:absolute;width:min(100vw,177.7778vh);height:min(56.25vw,100vh);left:50%;top:50%;transform:translate(-50%,-50%)}.canvas{position:absolute;inset:0}.controls{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:18px;padding:20px 0}.controls button{border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:5px;min-height:38px;padding:5px 13px;cursor:pointer}.controls button:hover:not(:disabled){border-color:var(--accent);color:var(--accent)}.controls button:disabled{opacity:.35;cursor:default}.counter{display:flex;align-items:center;gap:7px;color:var(--muted);font-size:13px}.counter input{width:52px;border:1px solid var(--line);border-radius:4px;padding:5px;text-align:center;background:transparent;color:var(--ink);appearance:textfield}.counter input::-webkit-inner-spin-button{appearance:none}.fullscreen{margin-left:auto}.status{min-height:22px;text-align:center;font-size:12px;color:var(--muted)}.error{color:#a02b2b}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-    @media(max-width:650px){header{align-items:flex-start;padding:15px 16px;gap:12px}.title{font-size:14px}.context{font-size:11px}.actions{flex-direction:column;gap:6px;font-size:12px}main{padding:16px 10px}.controls{gap:10px;padding:17px 0}.controls button{font-size:13px;padding:5px 10px}.fullscreen{margin-left:0}.counter{font-size:12px}}
-    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
-  </style>
-</head>
-<body>
-  <header>
-    <div class="title">Diffusion Score Estimation<span class="context">Fan Liu · SIAM NNP 2026</span></div>
-    <nav class="actions" aria-label="Slides actions"><a href="../#talks">Back to talks</a><a href="https://github.com/fflliu/fflliu.github.io/releases/download/siam-nnp-2026-slides/Diffusion_Score_Estimation_QR.pptx" id="download">Download PPTX</a></nav>
-  </header>
-  <main>
-    <div class="stage" id="stage" aria-label="Presentation slide"><div class="canvas" id="canvas"></div></div>
-    <div class="controls" aria-label="Slide controls">
-      <button id="previous" type="button" aria-label="Previous slide">← Previous</button>
-      <div class="counter"><label class="sr-only" for="page">Slide number</label><input id="page" type="number" min="1" value="1" inputmode="numeric"><span id="total"></span></div>
-      <button id="next" type="button" aria-label="Next slide">Next →</button>
-      <button id="animation" type="button" hidden>Pause animation</button>
-      <button id="fullscreen" class="fullscreen" type="button">Full screen</button>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f5f2">
+    <meta name="description" content="Fan Liu is a Ph.D. student in Mathematics at Georgia Tech interested in generative models, machine learning theory, and machine learning for science.">
+    <meta property="og:title" content="Fan Liu — Research & Ideas">
+    <meta property="og:description" content="Ph.D. student in Mathematics at Georgia Tech. Generative models, machine learning theory, and machine learning for science.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fflliu.github.io/">
+    <link rel="canonical" href="https://fflliu.github.io/">
+    <title>Fan Liu — Research & Ideas</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./styles.css?v=3595d8ad7c">
+    <script>try{if(localStorage.getItem('fanliu-theme')==='dark')document.documentElement.dataset.theme='dark'}catch{}</script>
+    <script src="./profile.js?v=8ed69d89cc" defer></script>
+    <script src="./app.js?v=3272f3c126" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="reading-progress" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="wordmark" href="#about" aria-label="Fan Liu, home"><span class="identity-mark" aria-hidden="true">fl</span><span>Fan Liu</span></a>
+      <nav class="navigation" aria-label="Main navigation">
+        <a href="#about" class="nav-link active" aria-current="location" data-i18n="navAbout">About</a>
+        <a href="#research" class="nav-link" data-i18n="navResearch">Research</a>
+        <a href="#publications" class="nav-link" data-i18n="navPublications">Publications</a>
+        <a href="#talks" class="nav-link" data-i18n="navTalks">Talks</a>
+        <a href="#education" class="nav-link" data-i18n="navEducation">Education</a>
+      </nav>
+      <div class="topbar-actions"><button id="theme-toggle" class="icon-button" aria-label="Switch to dark theme"><svg class="moon-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.4 15.2A8.8 8.8 0 0 1 8.8 3.6a8.8 8.8 0 1 0 11.6 11.6Z"/></svg><svg class="sun-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg></button><button id="language-toggle" aria-label="切换为中文">中文</button></div>
+    </header>
+    <div class="page-shell">
+      <main id="main">
+        <section id="about" class="about-section" aria-labelledby="name-heading">
+          <div class="hero-layout">
+            <div class="hero-name has-avatar"><div class="profile-avatar" aria-label="Profile photo placeholder"><img id="profile-photo" alt="Fan Liu" hidden><span class="avatar-initials" aria-hidden="true">FL</span></div><h1 id="name-heading">Fan Liu</h1><p class="affiliation"><span class="status-dot"></span><span data-i18n="position">Ph.D. student</span><span class="affiliation-dot">/</span><a href="https://www.gatech.edu/" target="_blank" rel="noopener noreferrer">Georgia Tech ↗</a><span class="affiliation-dot">/</span><span>Atlanta, GA</span></p><div id="contact-links" class="hero-contact"></div></div>
+            <div class="hero-copy"><p class="intro" data-i18n="intro">I am a second-year Ph.D. student in Mathematics at Georgia Tech, advised by <a href="https://sites.google.com/view/weizhumath/home" target="_blank" rel="noopener noreferrer">Wei Zhu</a>. I received my B.S. in Mathematics and Applied Mathematics from Tianjin University.</p><p class="intro" data-i18n="researchOverview">I am interested in <strong>generative models</strong>, both in improving their performance and in understanding their underlying mechanisms through theory. I am also interested in applying machine learning tools to <strong>scientific problems</strong>.</p><p class="intro" data-i18n="introEvolution">My interests initially focused exclusively on machine learning theory. I am now beginning to explore computational work, with the aim of connecting theory more closely with practice.</p><a class="primary-link" href="#research"><span data-i18n="exploreResearch">Explore my research</span><span aria-hidden="true">↘</span></a></div>
+          </div>
+        </section>
+
+        <section id="research" class="section research-section" aria-labelledby="research-heading">
+          <div class="section-heading"><h2 id="research-heading" data-i18n="researchTitle">Interests</h2></div>
+          <ul class="interests-list">
+            <li data-i18n="generativeInterest">Generative models: performance and theory</li>
+            <li data-i18n="theoryInterest">Machine learning theory</li>
+            <li data-i18n="scienceInterest">Machine learning for science</li>
+          </ul>
+        </section>
+
+        <section id="publications" class="section publications-section" aria-labelledby="publications-heading">
+          <div class="section-heading"><div><h2 id="publications-heading" data-i18n="publicationsTitle">Publications</h2></div><span class="section-aside" data-i18n="publicationsAside">Papers, preprints & ongoing work</span></div>
+          <div id="publication-filters" class="publication-filters" hidden></div>
+          <div id="publication-list"></div>
+          <div id="publication-empty" class="publication-empty"><div class="paper-symbol" aria-hidden="true"><svg viewBox="0 0 44 52" fill="none"><path d="M9 1h20l12 12v38H9z"/><path d="M29 1v13h12M17 25h16M17 32h16M17 39h10"/><path class="paper-offset" d="M4 7H1v44"/></svg></div><div><h3 data-i18n="publicationsEmptyTitle">More to share, soon.</h3><p data-i18n="publicationsEmptyText">Papers and preprints will appear here as this website grows.</p></div><span class="empty-label" data-i18n="comingSoon">IN THE MAKING</span></div>
+        </section>
+
+        <section id="talks" class="section talks-section" aria-labelledby="talks-heading">
+          <div class="section-heading"><h2 id="talks-heading" data-i18n="talksTitle">Talks</h2></div>
+          <article class="talk-row">
+            <div class="talk-date"><time datetime="2026-10-24" data-i18n="talkDate">Oct 24, 2026</time></div>
+            <div class="talk-body">
+              <h3>Diffusion Score Estimation with Shallow Neural Networks: Regularity, Approximation, and Finite-Sample Rates</h3>
+              <p class="talk-event"><a href="https://siamnnp2026.sciencesconf.org/program/details" target="_blank" rel="noopener noreferrer">2026 SIAM New York–New Jersey–Pennsylvania Section Annual Conference</a>, Rutgers University</p>
+              <p data-i18n="talkSession">Minisymposium: Machine learning theory for neural networks and scientific modeling</p>
+              <p class="talk-resources"><a href="./slides/" target="_blank" rel="noopener noreferrer" data-i18n="talkSlides">Slides ↗</a></p>
+            </div>
+          </article>
+        </section>
+
+        <section id="education" class="section education-section" aria-labelledby="education-heading">
+          <div class="section-heading"><h2 id="education-heading" data-i18n="educationTitle">Education</h2></div>
+          <div class="education-row"><div class="institute-mark" aria-hidden="true">GT</div><div class="education-main"><h3>Georgia Institute of Technology</h3><p data-i18n="educationPosition">Ph.D. in Mathematics</p><p class="education-advisor"><span data-i18n="advisorLabel">Advisor:</span> <a href="https://sites.google.com/view/weizhumath/home" target="_blank" rel="noopener noreferrer">Wei Zhu</a></p></div><span class="education-status"><span></span><span data-i18n="current">Current</span></span></div>
+          <div class="education-row"><div class="institute-mark" aria-hidden="true">TJU</div><div class="education-main"><h3>Tianjin University</h3><p data-i18n="bachelorPosition">B.S. in Mathematics and Applied Mathematics</p></div><span class="education-date" data-i18n="bachelorDates">2021–2025</span></div>
+        </section>
+
+      </main>
+      <footer><span class="footer-meta"><span>© 2026 Fan Liu</span><span class="footer-updated"><span data-i18n="lastUpdatedLabel">Last updated:</span> <time datetime="2026-10-24" data-i18n="lastUpdatedDate">Oct 24, 2026</time></span></span><span data-i18n="footerNote">A work in progress, much like research.</span><a class="footer-back-to-top" href="#about" aria-label="Back to top" title="Back to top"><span aria-hidden="true">↗</span></a></footer>
     </div>
-    <div id="status" class="status" role="status" aria-live="polite"></div>
-    <noscript><p>Enable JavaScript to preview the slides, or <a href="https://github.com/fflliu/fflliu.github.io/releases/download/siam-nnp-2026-slides/Diffusion_Score_Estimation_QR.pptx">download the PowerPoint file</a>.</p></noscript>
-  </main>
-  <script>
-  (()=>{
-    'use strict';
-    const slides=[[{"src":"image1.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image2.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image3.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image4.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image5.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image6.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0},{"src":"image7.png","x":30.05625,"y":24.802231,"w":39.887073,"h":39.887081,"video":"media1.mp4"}],[{"src":"image8.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image9.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image10.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image11.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image12.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image13.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image14.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image15.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image16.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image17.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image18.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image19.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image20.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image21.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image22.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image23.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image24.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image25.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image26.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image27.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image28.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image29.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image30.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image31.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image32.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image33.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image34.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image35.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image36.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image37.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image38.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image39.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image40.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image41.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image42.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image43.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image44.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image45.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image46.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image47.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image48.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image49.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image50.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image51.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image52.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image53.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image54.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image55.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image56.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image57.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image58.png","x":0.027756,"y":0.0,"w":99.94448,"h":100.0}],[{"src":"image59.png","x":0.0,"y":0.0,"w":100.0,"h":100.0}]];
-    const canvas=document.getElementById('canvas'),stage=document.getElementById('stage'),page=document.getElementById('page'),previous=document.getElementById('previous'),next=document.getElementById('next'),status=document.getElementById('status');
-    const animation=document.getElementById('animation');
-    let current=0;
-    page.max=slides.length;document.getElementById('total').textContent='/ '+slides.length;
-    function show(index,updateUrl=true){
-      current=Math.max(0,Math.min(slides.length-1,index));
-      for(const video of canvas.querySelectorAll('video'))video.pause();
-      canvas.replaceChildren();status.classList.remove('error');status.textContent='';
-      animation.hidden=!slides[current].some(layer=>layer.video);animation.textContent='Pause animation';
-      for(const layer of slides[current]){
-        const media=document.createElement(layer.video?'video':'img');
-        media.style.left=layer.x+'%';media.style.top=layer.y+'%';media.style.width=layer.w+'%';media.style.height=layer.h+'%';
-        if(layer.video){media.poster=layer.src;media.controls=false;media.muted=true;media.autoplay=true;media.loop=true;media.playsInline=true;media.preload='metadata';media.setAttribute('aria-label','Diffusion animation');media.src=layer.video;media.addEventListener('play',()=>animation.textContent='Pause animation');media.addEventListener('pause',()=>animation.textContent='Play animation');}
-        else{media.alt='';media.draggable=false;media.src=layer.src;media.decoding='async';}
-        media.addEventListener('error',()=>{status.textContent='This slide could not load. Please try refreshing or download the PPTX.';status.classList.add('error');});
-        canvas.append(media);
-      }
-      page.value=current+1;previous.disabled=current===0;next.disabled=current===slides.length-1;
-      stage.setAttribute('aria-label','Slide '+(current+1)+' of '+slides.length);
-      document.title='Slide '+(current+1)+' — Diffusion Score Estimation · Fan Liu';
-      if(updateUrl)history.replaceState(null,'','#slide-'+(current+1));
-      for(const layer of slides[current+1]||[]){const image=new Image();image.src=layer.src;}
-    }
-    function fromHash(){const match=location.hash.match(/^#slide-(\d+)$/);show(match?Number(match[1])-1:0,false);}
-    previous.addEventListener('click',()=>show(current-1));next.addEventListener('click',()=>show(current+1));
-    page.addEventListener('change',()=>{const value=Number(page.value);show(Number.isFinite(value)?Math.round(value)-1:current);});
-    page.addEventListener('keydown',event=>{if(event.key==='Enter'){event.preventDefault();const value=Number(page.value);show(Number.isFinite(value)?Math.round(value)-1:current);page.blur();}});
-    document.addEventListener('keydown',event=>{
-      if(event.target.matches('input,textarea,select')||event.altKey||event.ctrlKey||event.metaKey)return;
-      if(event.key===' '&&event.target.closest('button,a'))return;
-      if(['ArrowRight','PageDown',' '].includes(event.key)){event.preventDefault();show(current+1);}
-      else if(['ArrowLeft','PageUp'].includes(event.key)){event.preventDefault();show(current-1);}
-      else if(event.key==='Home'){event.preventDefault();show(0);}else if(event.key==='End'){event.preventDefault();show(slides.length-1);}
-    });
-    animation.addEventListener('click',()=>{for(const video of canvas.querySelectorAll('video')){if(video.paused){const playing=video.play();if(playing?.catch)playing.catch(()=>{});}else video.pause();}});
-    const full=document.getElementById('fullscreen');
-    if(!stage.requestFullscreen)full.hidden=true;
-    full.addEventListener('click',()=>{const action=document.fullscreenElement?document.exitFullscreen():stage.requestFullscreen();if(action?.catch)action.catch(()=>{});});
-    let startX=null;stage.addEventListener('touchstart',event=>{if(event.target.tagName!=='VIDEO')startX=event.changedTouches[0].clientX;},{passive:true});
-    stage.addEventListener('touchend',event=>{if(startX===null)return;const delta=event.changedTouches[0].clientX-startX;startX=null;if(Math.abs(delta)>65)show(current+(delta<0?1:-1));},{passive:true});
-    window.addEventListener('hashchange',fromHash);fromHash();
-  })();
-  </script>
-</body>
+  </body>
 </html>
