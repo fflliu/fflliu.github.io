@@ -2,13 +2,14 @@
   'use strict';
   const translations = {
     en: {
-      sidebarRole: 'Ph.D. student<br>Georgia Tech', navAbout: 'About', navResearch: 'Research', navPublications: 'Publications', navTalks: 'Talks', talksTitle: 'Talks', talkDate: 'Oct 24, 2026', talkSlides: 'Slides ↗', talkSession: 'Minisymposium: Machine learning theory for neural networks and scientific modeling', navEducation: 'Education', navTeaching: 'Teaching', teachingTitle: 'Teaching', teachingRole: 'Teaching assistant', teachingSpring2026: 'Spring 2026', teachingFall2025: 'Fall 2025', sidebarNote: 'Research & ideas', topbar: 'A PERSONAL ACADEMIC SPACE', status: 'Always curious', heroEyebrow: "HELLO, I'M", position: 'Ph.D. student', intro: 'I am a second-year Ph.D. student in Mathematics at Georgia Tech, advised by <a href="https://sites.google.com/view/weizhumath/home" target="_blank" rel="noopener noreferrer">Wei Zhu</a>. I received my B.S. in Mathematics and Applied Mathematics from Tianjin University.', researchOverview: 'I am interested in <strong>generative models</strong>, both in improving their performance and in understanding their underlying mechanisms through theory. I am also interested in applying machine learning tools to <strong>scientific problems</strong>.', introEvolution: 'My interests initially focused exclusively on machine learning theory. I am now beginning to explore computational work, with the aim of connecting theory more closely with practice.', exploreResearch: 'Explore my research', selectedWork: 'Publications', note: 'A SMALL UPDATE', newsText: 'A new home for my research. More to come.', researchTitle: 'Interests', generativeInterest: 'Generative models: performance and theory', theoryInterest: 'Machine learning theory', scienceInterest: 'Machine learning for science', publicationsTitle: 'Publications', publicationsAside: 'Papers, preprints & ongoing work', publicationsEmptyTitle: 'More to share, soon.', publicationsEmptyText: 'Papers and preprints will appear here as this website grows.', comingSoon: 'IN THE MAKING', educationTitle: 'Education', educationPosition: 'Ph.D. in Mathematics', advisorLabel: 'Advisor:', bachelorPosition: 'B.S. in Mathematics and Applied Mathematics', bachelorDates: '2021–2025', current: 'Current', backToTop: 'Back to top', lastUpdatedLabel: 'Last updated:', lastUpdatedDate: 'Oct 28, 2026', all: 'All', code: 'Code ↗', project: 'Project ↗', abstract: 'Abstract', hideAbstract: 'Hide abstract', email: 'Email ↗', cv: 'CV ↗'
+      sidebarRole: 'Ph.D. student<br>Georgia Tech', navAbout: 'About', navResearch: 'Research', navPublications: 'Publications', navTalks: 'Talks', talksTitle: 'Talks', talkDate: 'Oct 24, 2026', talkSlides: 'Slides ↗', talkSession: 'Minisymposium: Machine learning theory for neural networks and scientific modeling', navEducation: 'Education', navTeaching: 'Teaching', teachingTitle: 'Teaching', teachingRole: 'Teaching assistant', teachingFall2026: 'Fall 2026', teachingSpring2026: 'Spring 2026', teachingFall2025: 'Fall 2025', topbar: 'A PERSONAL ACADEMIC SPACE', status: 'Always curious', heroEyebrow: "HELLO, I'M", position: 'Ph.D. student', intro: 'I am a second-year Ph.D. student in Mathematics at Georgia Tech, advised by <a href="https://sites.google.com/view/weizhumath/home" target="_blank" rel="noopener noreferrer">Dr. Wei Zhu</a>. I received my B.S. in Mathematics and Applied Mathematics from Tianjin University.', researchOverview: 'I am interested in <strong>generative models</strong>, both in improving their performance and in understanding their underlying mechanisms through theory. I am also interested in applying machine learning tools to <strong>scientific problems</strong>.', introEvolution: 'My interests initially focused exclusively on machine learning theory. I am now beginning to explore computational work, with the aim of connecting theory more closely with practice.', exploreResearch: 'Explore my research', selectedWork: 'Publications', note: 'A SMALL UPDATE', newsText: 'A new home for my research. More to come.', researchTitle: 'Interests', generativeInterest: 'Generative models: performance and theory', theoryInterest: 'Machine learning theory', scienceInterest: 'Machine learning for science', publicationsTitle: 'Publications', publicationsAside: 'Papers, preprints & ongoing work', publicationsEmptyTitle: 'More to share, soon.', publicationsEmptyText: 'Papers and preprints will appear here as this website grows.', comingSoon: 'IN THE MAKING', educationTitle: 'Education', educationPosition: 'Ph.D. in Mathematics', advisorLabel: 'Advisor:', bachelorPosition: 'B.S. in Mathematics and Applied Mathematics', bachelorDates: '2021–2025', current: 'Current', backToTop: 'Back to top', lastUpdatedLabel: 'Last updated:', lastUpdatedDate: 'Oct 28, 2026', visitsLabel: 'Views:', visitorMapTitle: 'View visitor map (approximate locations)', all: 'All', code: 'Code ↗', project: 'Project ↗', abstract: 'Abstract', hideAbstract: 'Hide abstract', email: 'Email ↗', cv: 'CV ↗'
     },
     zh: {
-      sidebarRole: '博士生<br>佐治亚理工学院', navAbout: '关于', navResearch: '研究', navPublications: '论文', navTalks: '报告', talksTitle: '学术报告', talkDate: '2026 年 10 月 24 日', talkSlides: '幻灯片 ↗', talkSession: '专题讨论会：Machine learning theory for neural networks and scientific modeling', navEducation: '教育', navTeaching: '教学', teachingTitle: '教学经历', teachingRole: '助教', teachingSpring2026: '2026 年春季', teachingFall2025: '2025 年秋季', sidebarNote: '研究与思考', topbar: '研究、想法与持续的探索', status: '保持好奇', heroEyebrow: '你好，我是', position: '博士生', intro: '我目前是 Georgia Tech（佐治亚理工学院）的数学博士二年级学生，导师是 <a href="https://sites.google.com/view/weizhumath/home" target="_blank" rel="noopener noreferrer">Wei Zhu</a>。我在天津大学获得了数学与应用数学专业的学士学位。', researchOverview: '我对<strong>生成模型</strong>感兴趣，既关心如何提升它们的表现，也希望从理论上理解其背后的机制。我也对如何将机器学习工具应用于<strong>科学问题</strong>感兴趣。', introEvolution: '过去，我的兴趣集中在纯粹的机器学习理论研究上。现在，我正开始尝试计算工作，希望让理论与实践联系得更紧密。', exploreResearch: '了解我的研究', selectedWork: '学术论文', note: '最近动态', newsText: '研究与思考有了一个新家，更多内容陆续更新。', researchTitle: '研究兴趣', generativeInterest: '生成模型：性能与理论', theoryInterest: '机器学习理论', scienceInterest: '机器学习在科学问题中的应用', publicationsTitle: '学术论文', publicationsAside: '论文、预印本与进行中的工作', publicationsEmptyTitle: '更多研究，敬请期待。', publicationsEmptyText: '论文和预印本将在这里陆续更新。', comingSoon: '陆续整理中', educationTitle: '教育经历', educationPosition: '数学博士（在读）', advisorLabel: '导师：', bachelorPosition: '数学与应用数学学士', bachelorDates: '2021–2025', current: '在读', backToTop: '回到顶部', lastUpdatedLabel: '最后更新：', lastUpdatedDate: '2026 年 10 月 28 日', all: '全部', code: '代码 ↗', project: '项目 ↗', abstract: '摘要', hideAbstract: '收起摘要', email: '邮件 ↗', cv: '简历 ↗'
+      sidebarRole: '博士生<br>佐治亚理工学院', navAbout: '关于', navResearch: '研究', navPublications: '论文', navTalks: '报告', talksTitle: '学术报告', talkDate: '2026 年 10 月 24 日', talkSlides: '幻灯片 ↗', talkSession: '专题讨论会：Machine learning theory for neural networks and scientific modeling', navEducation: '教育', navTeaching: '教学', teachingTitle: '教学经历', teachingRole: '助教', teachingFall2026: '2026 年秋季', teachingSpring2026: '2026 年春季', teachingFall2025: '2025 年秋季', topbar: '研究、想法与持续的探索', status: '保持好奇', heroEyebrow: '你好，我是', position: '博士生', intro: '我目前是 Georgia Tech（佐治亚理工学院）的数学博士二年级学生，导师是 <a href="https://sites.google.com/view/weizhumath/home" target="_blank" rel="noopener noreferrer">Dr. Wei Zhu</a>。我在天津大学获得了数学与应用数学专业的学士学位。', researchOverview: '我对<strong>生成模型</strong>感兴趣，既关心如何提升它们的表现，也希望从理论上理解其背后的机制。我也对如何将机器学习工具应用于<strong>科学问题</strong>感兴趣。', introEvolution: '过去，我的兴趣集中在纯粹的机器学习理论研究上。现在，我正开始尝试计算工作，希望让理论与实践联系得更紧密。', exploreResearch: '了解我的研究', selectedWork: '学术论文', note: '最近动态', newsText: '研究与思考有了一个新家，更多内容陆续更新。', researchTitle: '研究兴趣', generativeInterest: '生成模型：性能与理论', theoryInterest: '机器学习理论', scienceInterest: '机器学习在科学问题中的应用', publicationsTitle: '学术论文', publicationsAside: '论文、预印本与进行中的工作', publicationsEmptyTitle: '更多研究，敬请期待。', publicationsEmptyText: '论文和预印本将在这里陆续更新。', comingSoon: '陆续整理中', educationTitle: '教育经历', educationPosition: '数学博士（在读）', advisorLabel: '导师：', bachelorPosition: '数学与应用数学学士', bachelorDates: '2021–2025', current: '在读', backToTop: '回到顶部', lastUpdatedLabel: '最后更新：', lastUpdatedDate: '2026 年 10 月 28 日', visitsLabel: '访问量：', visitorMapTitle: '查看访客地图（大致位置）', all: '全部', code: '代码 ↗', project: '项目 ↗', abstract: '摘要', hideAbstract: '收起摘要', email: '邮件 ↗', cv: '简历 ↗'
     }
   };
   const profile = window.PROFILE || {};
+  let visitCount = null;
   let language = 'en';
   try { if (localStorage.getItem('fanliu-language') === 'zh') language = 'zh'; } catch {}
   const savePreference = (key, value) => { try { localStorage.setItem(key, value); } catch {} };
@@ -56,6 +57,67 @@
       document.querySelector('.profile-avatar').setAttribute('aria-label', 'Fan Liu');
     }, { once: true });
     image.src = url;
+  }
+
+  function renderVisitCount() {
+    const element = document.getElementById('visit-count');
+    if (element && Number.isSafeInteger(visitCount)) {
+      element.textContent = new Intl.NumberFormat(language === 'zh' ? 'zh-CN' : 'en-US').format(visitCount);
+    }
+  }
+
+  async function loadVisitCount() {
+    const element = document.getElementById('visit-count');
+    if (!element) return;
+    // Only the published homepage increments; local previews read the same shared total.
+    const published = location.hostname === 'fflliu.github.io' && location.protocol === 'https:';
+    const action = published ? 'hit' : 'get';
+    const key = 'fflliu-github-io-homepage-views';
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 8000);
+    try {
+      const response = await fetch('https://countapi.mileshilliard.com/api/v1/' + action + '/' + key, {
+        mode: 'cors', credentials: 'omit', cache: 'no-store', referrerPolicy: 'no-referrer', signal: controller.signal
+      });
+      if (!published && response.status === 404) {
+        visitCount = 0;
+      } else {
+        if (!response.ok) throw new Error('Counter unavailable');
+        const data = await response.json();
+        const total = Number(data.value);
+        if (!Number.isSafeInteger(total) || total < 0) throw new Error('Invalid visit count');
+        visitCount = total;
+      }
+      renderVisitCount();
+    } catch {
+      element.textContent = '—';
+    } finally {
+      clearTimeout(timeout);
+    }
+  }
+
+  function renderVisitorMapLink() {
+    const link = document.querySelector('.footer-visits');
+    const value = profile.visitorMap?.url;
+    const url = safeUrl(value) || (typeof value === 'string' && value.startsWith('./') ? value : null);
+    if (!link || !url) return;
+    link.href = url;
+    link.title = dictionary().visitorMapTitle;
+  }
+
+  function trackVisitorMap() {
+    // Keep development visits out of the live IP-based map.
+    if (location.hostname !== 'fflliu.github.io' || location.protocol !== 'https:') return;
+    const url = safeUrl(profile.visitorMap?.tracker);
+    if (!url || new URL(url).hostname !== 'mapmyvisitors.com') return;
+    const tracker = document.createElement('img');
+    tracker.width = 1;
+    tracker.height = 1;
+    tracker.alt = '';
+    tracker.hidden = true;
+    tracker.referrerPolicy = 'origin';
+    tracker.src = url;
+    document.body.append(tracker);
   }
 
   let currentTopic = 'all';
@@ -125,7 +187,7 @@
     backToTop.setAttribute('aria-label', dictionary().backToTop);
     backToTop.title = dictionary().backToTop;
     document.querySelector('.skip-link').textContent = language === 'zh' ? '跳转到正文' : 'Skip to content';
-    updateThemeLabel(); renderPublications(); renderContact();
+    updateThemeLabel(); renderPublications(); renderContact(); renderVisitCount(); renderVisitorMapLink();
   }
   document.getElementById('language-toggle').addEventListener('click', () => { language = language === 'en' ? 'zh' : 'en'; savePreference('fanliu-language', language); applyLanguage(); });
 
@@ -164,5 +226,5 @@
   }
   window.addEventListener('scroll', () => { if (!scrollQueued) { scrollQueued = true; requestAnimationFrame(updateScroll); } }, { passive: true });
   window.addEventListener('resize', updateScroll, { passive: true });
-  applyLanguage(); renderAvatar(); updateScroll();
+  applyLanguage(); renderAvatar(); loadVisitCount(); trackVisitorMap(); updateScroll();
 })();
