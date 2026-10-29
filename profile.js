@@ -16,7 +16,7 @@ window.PROFILE = {
   publications: [
     {
       title: 'Diffusion Score Estimation with Shallow Neural Networks: Regularity, Approximation, and Finite-Sample Rates',
-      authors: 'Fan Liu, Yahong Yang, Dr. Wei Zhu',
+      authors: 'Fan Liu, Yahong Yang, Wei Zhu',
       year: 2026,
       venue: 'arXiv preprint · arXiv:2610.27206',
       topic: 'Diffusion models',
