@@ -4,11 +4,6 @@
 window.PROFILE = {
   avatar: './assets/avatar.jpg?v=814eccbb42',
   email: 'fliu370@gatech.edu',
-  visitorMap: {
-    url: './visitors.html',
-    statisticsUrl: 'https://mapmyvisitors.com/web/1c962',
-    tracker: 'https://mapmyvisitors.com/map.png?d=CJ4p5NegETet70R6wHiUWyiyihHogz5p5gLSm3PI8Us&cl=ffffff'
-  },
   scholar: '',
   github: '',
   linkedin: '',
